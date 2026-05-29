@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Este projeto tem como objetivo analisar dados de vendas para identificar padrões de receita, comportamento de clientes, sazonalidade e eficiência operacional. A análise busca gerar insights que auxiliem na tomada de decisão baseada em dados.
+Este projeto tem como objetivo analisar dados de vendas a partir de um pipeline estruturado de dados, passando por etapas de inspeção, tratamento, validação e análise exploratória. A proposta é gerar insights confiáveis que auxiliem na tomada de decisão baseada em dados.
 
 ---
 
@@ -14,26 +14,31 @@ Este projeto tem como objetivo analisar dados de vendas para identificar padrõe
 
 ---
 
-## Limpeza e Tratamento de Dados
+## Pipeline de Dados
 
-Foram realizadas etapas de pré-processamento para garantir a qualidade da análise:
+O projeto foi estruturado em etapas que simulam um fluxo real de dados:
 
-- Conversão de datas para formato adequado
-- Verificação e tratamento de valores nulos
-- Ajustes em tipos de dados
-- Decisão consciente sobre remoção ou manutenção de registros 
+1. **Data Profiling (Inspeção dos Dados)**
+   - Análise inicial de tipos, nulos e estrutura
+   - Identificação de inconsistências e padrões
 
----
+2. **Staging (Tratamento e Preparação dos Dados)**
+   - Conversão de tipos (ex: datas)
+   - Padronização de colunas categóricas
+   - Limpeza de strings
+   - Preparação dos dados para análise
 
-## Análise Exploratória de Dados (EDA)
+3. **Validação de Dados**
+   - Verificação de consistência entre variáveis (ex: SALES vs cálculo esperado)
+   - Identificação de valores inválidos (≤ 0)
+   - Levantamento de possíveis inconsistências e hipóteses
 
-Foram realizadas análises para entender o comportamento das vendas:
-
-- Receita por linha de produto
-- Receita por país
-- Análise de clientes mais relevantes
-- Tendência temporal de vendas
-- Análise de status de pedidos
+4. **Análise Exploratória de Dados (EDA)**
+   - Receita por linha de produto
+   - Receita por país
+   - Análise de clientes mais relevantes
+   - Tendência temporal de vendas
+   - Distribuição de status de pedidos
 
 ---
 
@@ -49,7 +54,7 @@ Foram realizadas análises para entender o comportamento das vendas:
 
 ## Conclusão
 
-O projeto revelou que a receita apresenta concentração em determinados produtos e regiões, além de padrões temporais relevantes. Esses insights podem apoiar decisões estratégicas como diversificação de portfólio e expansão geográfica.
+O projeto evidenciou a importância da preparação e validação dos dados antes da análise, além de revelar padrões relevantes de concentração de receita e comportamento temporal. Esses insights podem apoiar decisões estratégicas como diversificação de portfólio e expansão geográfica.
 
 ---
 
