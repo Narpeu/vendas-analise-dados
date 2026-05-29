@@ -58,7 +58,7 @@ O projeto revelou que a receita apresenta concentração em determinados produto
 - Python
 - Pandas
 - Jupyter Notebook
-- (SQL, se você tiver usado ou for adicionar depois)
+- SQL
 
 ---
 
