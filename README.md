@@ -79,24 +79,24 @@ As mesmas análises foram replicadas utilizando SQL com o objetivo de:
 
 ---
 
-## Visualização da Análise
+## Visualização da Análise (HTML)
 
-A análise foi desenvolvida em um notebook Jupyter (`.ipynb`) disponível neste repositório.
+Como o arquivo `.ipynb` pode não ser renderizado corretamente diretamente no GitHub em alguns casos, foi disponibilizada uma versão em HTML do notebook para visualização completa da análise.
 
-### Acesso ao código
+**Acesso ao arquivo:**
 
-- Notebook: `notebooks/analise_inicial.ipynb`
-- SQL: `sql/analise_vendas.sql`
+- [Visualizar versão HTML da análise](https://github.com/Narpeu/vendas-analise-dados/blob/main/notebooks/analise_inicial.html)
 
 ---
 
-### Versão HTML da análise
+### ⚠️ Observação
 
-Para facilitar a visualização sem necessidade de execução do código, foi gerada uma versão em HTML do notebook:
+Para melhor experiência de leitura, recomenda-se:
 
-- `notebooks/analise_inicial.html`
+- Abrir o arquivo HTML diretamente no navegador
+- Ou realizar o download do arquivo para visualização local (melhor alternativa)
 
-⚠️ Caso a visualização do notebook no GitHub não funcione corretamente, recomenda-se utilizar o arquivo HTML ou baixar o repositório para execução local.
+Essa versão contém toda a análise realizada em Python, incluindo etapas de limpeza, exploração e insights.
 
 ---
 
