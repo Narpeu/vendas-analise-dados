@@ -116,4 +116,10 @@ Este projeto demonstra habilidades em:
 
 Este projeto simula um fluxo completo de análise de dados, combinando Python e SQL para explorar, validar e interpretar dados de vendas.
 
-Ele evidencia competências fundamentais para atuação como Analista de Dados Júnior, incluindo organização, análise e geração de insights.
+Através dele, foram desenvolvidas habilidades fundamentais em análise exploratória, manipulação de dados e interpretação de métricas de negócio.
+
+---
+
+## Observação Final
+
+Projeto desenvolvido para fins de estudo e construção de portfólio na área de Análise de Dados.
