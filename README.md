@@ -1,74 +1,119 @@
-# Análise de Vendas - Pipeline de Dados
+# Análise de Vendas - Projeto de Análise de Dados (Python + SQL)
 
 ## Objetivo
 
-Este projeto tem como objetivo analisar dados de vendas a partir de um pipeline estruturado de dados, passando por etapas de inspeção, tratamento, validação e análise exploratória. A proposta é gerar insights confiáveis que auxiliem na tomada de decisão baseada em dados.
+Este projeto tem como objetivo realizar uma análise exploratória de dados de vendas utilizando Python (Pandas) e SQL.
+
+A proposta é entender o comportamento de clientes, produtos, países e padrões de receita ao longo do tempo, gerando insights de negócio que podem apoiar decisões estratégicas.
 
 ---
 
-## Dataset
+## Tecnologias utilizadas
 
-- Fonte: Kaggle
-- Tipo: Dados transacionais de vendas
-- Descrição: Contém informações como produtos vendidos, valores, datas, países e clientes.
+- Python
+- Pandas
+- SQL
+- Jupyter Notebook
+- Git / GitHub
 
 ---
 
-## Pipeline de Dados
+## Estrutura do Projeto
 
-O projeto foi estruturado em etapas que simulam um fluxo real de dados:
+- `notebooks/` → Análise exploratória e tratamento dos dados em Python
+- `sql/` → Consultas SQL utilizadas para replicar as análises
+- `data/` → Dataset utilizado no projeto
+- `reports/` → Versão HTML da análise (opcional)
 
-1. **Data Profiling (Inspeção dos Dados)**
-   - Análise inicial de tipos, nulos e estrutura
-   - Identificação de inconsistências e padrões
+---
 
-2. **Staging (Tratamento e Preparação dos Dados)**
-   - Conversão de tipos (ex: datas)
-   - Padronização de colunas categóricas
-   - Limpeza de strings
-   - Preparação dos dados para análise
+## Etapas da Análise
 
-3. **Validação de Dados**
-   - Verificação de consistência entre variáveis (ex: SALES vs cálculo esperado)
-   - Identificação de valores inválidos (≤ 0)
-   - Levantamento de possíveis inconsistências e hipóteses
+### 1. Exploração dos Dados (Python)
 
-4. **Análise Exploratória de Dados (EDA)**
-   - Receita por linha de produto
-   - Receita por país
-   - Análise de clientes mais relevantes
-   - Tendência temporal de vendas
-   - Distribuição de status de pedidos
+- Inspeção inicial do dataset
+- Verificação de tipos de dados
+- Identificação de valores nulos e duplicados
+- Entendimento da estrutura geral dos dados
+
+---
+
+### 2. Tratamento dos Dados (Python)
+
+- Padronização de variáveis categóricas
+- Conversão de tipos (ex: datas)
+- Limpeza de inconsistências
+- Preparação dos dados para análise
+
+---
+
+### 3. Análise Exploratória de Dados (EDA)
+
+Foram analisadas as seguintes dimensões:
+
+- Receita por linha de produto
+- Receita por país
+- Receita por cliente
+- Receita ao longo do tempo
+- Distribuição de status dos pedidos
+
+---
+
+### 4. Validação das Análises com SQL
+
+As mesmas análises foram replicadas utilizando SQL com o objetivo de:
+
+- Validar os resultados obtidos em Python
+- Praticar consultas SQL para análise de dados
+- Comparar diferentes abordagens de exploração de dados
 
 ---
 
 ## Principais Insights
 
-- Identificação das linhas de produtos mais lucrativas
-- Concentração de receita em determinados países
-- Clientes com maior impacto no faturamento
-- Padrões de sazonalidade nas vendas
-- Indícios de dependência de poucos produtos/mercados
+- A receita é fortemente concentrada na linha de produtos **Classic Cars**
+- Os Estados Unidos representam o principal mercado em termos de faturamento
+- Existe alta concentração de receita em um pequeno grupo de clientes
+- As vendas apresentam padrão de sazonalidade, com picos em determinados meses do ano
+- A maioria dos pedidos possui status “Shipped”, indicando operação estável
+
+---
+
+## Visualização da Análise
+
+A análise foi desenvolvida em um notebook Jupyter (`.ipynb`) disponível neste repositório.
+
+### Acesso ao código
+
+- Notebook: `notebooks/analise_inicial.ipynb`
+- SQL: `sql/analise_vendas.sql`
+
+---
+
+### Versão HTML da análise
+
+Para facilitar a visualização sem necessidade de execução do código, foi gerada uma versão em HTML do notebook:
+
+- `notebooks/analise_inicial.html`
+
+⚠️ Caso a visualização do notebook no GitHub não funcione corretamente, recomenda-se utilizar o arquivo HTML ou baixar o repositório para execução local.
+
+---
+
+## Resultados do Projeto
+
+Este projeto demonstra habilidades em:
+
+- Manipulação e limpeza de dados com Python
+- Análise exploratória de dados (EDA)
+- Escrita de consultas SQL para análise de dados
+- Interpretação de métricas de negócio
+- Comunicação de insights de forma estruturada
 
 ---
 
 ## Conclusão
 
-O projeto evidenciou a importância da preparação e validação dos dados antes da análise, além de revelar padrões relevantes de concentração de receita e comportamento temporal. Esses insights podem apoiar decisões estratégicas como diversificação de portfólio e expansão geográfica.
+Este projeto simula um fluxo completo de análise de dados, combinando Python e SQL para explorar, validar e interpretar dados de vendas.
 
----
-
-## Tecnologias Utilizadas
-
-- Python
-- Pandas
-- Jupyter Notebook
-- SQL
-
----
-
-## Próximos Passos
-
-- Implementar consultas SQL equivalentes à análise
-- Automatizar pipeline de dados
-- Expandir para dashboards (Power BI ou Streamlit)
+Ele evidencia competências fundamentais para atuação como Analista de Dados Júnior, incluindo organização, análise e geração de insights.
